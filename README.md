@@ -1,16 +1,19 @@
-### Hi there 👋
+### Hi there, I'm Fernando! 👋😊
 
-<!--
-**ferferga/ferferga** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I started studying Software Engineering in 2020. Here you will find some of my hobby and side-projects.
 
-Here are some ideas to get you started:
+- 🖥 I’m currently working mostly on the [Jellyfin Project](https://github.com/jellyfin) and it's new [Vue client](https://github.com/jellyfin/jellyfin-vue).
+- 🌱 I have some of my repos under different organizations: [TelegramTools](https://github.com/TelegramTools)
+- 🌠 If you enjoy some of my work and are interested in giving me a huge motivation boost,
+you can consider a one-time or recurrent donation through [GitHub sponsors](https://github.com/sponsors/ferferga).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Be welcome to my profile and have a nice day!
+
+<div style="display: flex">
+    <img src="https://github.com/ferferga/ferferga/blob/main/generated/overview.svg" />
+    <img src="https://github.com/ferferga/ferferga/blob/main/generated/languages.svg" />
+</div>
+
+<a href="https://github.com/jstrieb/github-stats">
+    <i>Source code of this profile representation</i>
+</a>
