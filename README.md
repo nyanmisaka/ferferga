@@ -1,5 +1,7 @@
 ### Hi there, I'm Fernando! 👋😊
 
+<div style="display: flex">
+<div>
 I started studying Software Engineering in 2020. Here you will find some of my side and hobby projects.
 
 - 🖥 I’m currently working mostly on the [Jellyfin Project](https://github.com/jellyfin) and it's new [Vue client](https://github.com/jellyfin/jellyfin-vue).
@@ -9,12 +11,6 @@ I started studying Software Engineering in 2020. Here you will find some of my s
 you can consider a one-time or recurrent donation through [GitHub sponsors](https://github.com/sponsors/ferferga). Thank you in advance!
 
 Welcome to my profile!
-
-<div style="display: flex">
-    <img src="https://github.com/ferferga/ferferga/blob/main/generated/overview.svg" />
-    <img src="https://github.com/ferferga/ferferga/blob/main/generated/languages.svg" />
 </div>
-
-<a href="https://github.com/jstrieb/github-stats">
-    <i>Source code of this profile representation</i>
-</a>
+    <img src="https://github.com/ferferga/ferferga/blob/main/github-metrics.svg" />
+</div>

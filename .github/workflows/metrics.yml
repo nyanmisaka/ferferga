@@ -1,0 +1,54 @@
+name: Metrics for ferferga
+on:
+  # Schedule updates (each hour)
+  schedule:
+    - cron: "5 0 * * *"
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          clean: true
+          ref: 'main'
+
+      - uses: lowlighter/metrics@v3.9
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          committer_token: ${{ secrets.ACCESS_TOKEN }}
+          # Options 2
+          user: ferferga
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Madrid
+          config_twemoji: yes
+          plugin_gists: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_ignored: TSQL
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 0%
+          plugin_lines: yes
+          repositories: 99999999999999999999999
+          repositories_affiliations: ""
+          verify: yes
+          output_action: none
+          filename: github-metrics.*
+
+      - name: Move output to working directory
+        run: sudo mv /metrics_renders/github-metrics.* .
+
+      - name: Commit to the repo
+        run: |
+          git config --global user.name "Fernando Fernández"
+          git config --global user.email "ferferga@hotmail.com"
+          git add github-metrics.*
+          # "echo" returns true so the build succeeds, even if no changed files
+          git commit --amend --no-edit || echo
+          git push -f
