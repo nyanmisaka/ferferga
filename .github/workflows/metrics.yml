@@ -37,6 +37,7 @@ jobs:
           repositories_affiliations: ""
           verify: yes
           output_action: none
+          optimize: no
           filename: github-metrics.*
 
       - name: Move output to working directory
