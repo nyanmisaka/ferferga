@@ -33,6 +33,7 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_threshold: 0%
           plugin_lines: yes
+          plugins_errors_fatal: yes
           repositories: 99999999999999999999999
           repositories_affiliations: ""
           verify: yes
